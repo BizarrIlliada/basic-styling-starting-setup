@@ -34,3 +34,19 @@ header {
   margin: 16px;
   border: 2px dashed #ccc;
 }
+
+.active {
+  transition: 0.3s
+}
+
+.active--red {
+  border-color: red;
+}
+
+.active--green {
+  border-color: green;
+}
+
+.active--blue {
+  border-color: blue;
+}

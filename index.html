@@ -18,20 +18,20 @@
     </header>
     <section id="styling">
       <div
-        class="demo"
-        :style="{
-          borderColor: boxASelected ? 'red' : '#ccc',
-          transition: '0.3s'
+        :class="{
+          demo: true,
+          active: boxASelected,
+          'active--red': boxASelected,
         }"
         @click="boxSelected('A')"
       >
 
       </div>
-      <div
+        <div
         class="demo"
-        :style="{
-          borderColor: boxBSelected ? 'green' : '#ccc',
-          transition: '0.3s'
+        :class="{
+          active: boxBSelected,
+          'active--green': boxBSelected,
         }"
         @click="boxSelected('B')"
       >
@@ -39,9 +39,9 @@
       </div>
       <div
         class="demo"
-        :style="{
-          borderColor: boxCSelected ? 'blue' : '#ccc',
-          transition: '0.3s'
+        :class="{
+          active: boxCSelected,
+          'active--blue': boxCSelected,
         }"
         @click="boxSelected('C')"
       >
